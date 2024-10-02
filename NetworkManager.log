@@ -1,0 +1,221 @@
+Script iniciado em 2024-09-24 16:01:16-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="146" LINES="27"]
+[?2004h]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ ip apython manage.py runserver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo nano /etc/nginx/sites-enabled/Automacao[1P/Automacaoavailable/Automacao[6Psites-available/Automacao[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgunicorn Automacao.wsgi:application --bind 127.0.0.1:8000 --daemon[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Psudo systemctl restart nginx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pnginx -tgunicorn Automacao.wsgi:application[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Ppython manage.py runserver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Psudo killall gunicorn[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K.Le[K[K Le/bin/activate
+[?2004l[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ . Le/bin/activateip a[Kpython manage.py runserver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo nano /etc/nginx/sites-enabled/Automacao[1P/Automacaoavailable/Automacao[6Psites-available/Automacao[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgunicorn Automacao.wsgi:application --bind 127.0.0.1:8000 --daemon[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Psudo systemctl restart nginx[15Pnginx -tgunicorn Automacao.wsgi:application[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo systemctl restart NetworkManager.sercv[K[Kvice
+[?2004l[sudo] senha para on: 
+[0;1;31mJob for NetworkManager.service failed because the control process exited with error code.[0m
+[0;1;31mSee "systemctl status NetworkManager.service" and "journalctl -xeu NetworkManager.service" for details.[0m
+[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ sudo apt-get install NetworkManager.service
+[?2004l[sudo] senha para on: 
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências... Pronto
+Lendo informação de estado... 0%            Lendo informação de estado... 0%Lendo informação de estado... Pronto
+E: Impossível encontrar o pacote NetworkManager.service
+E: Couldn't find any package by glob 'NetworkManager.service'
+E: Não foi possível encontrar o pacote através da expressão regular 'NetworkManager.service'
+[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ [7msystemctl status NetworkManager.service[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csystemctl status NetworkManager.service
+[?2004l[?1h=[0;1;31m×[0m NetworkManager.service - Network Manager[m
+     Loaded: loaded (]8;;file://rdo/lib/systemd/system/NetworkManager.service/lib/systemd/system/NetworkManager.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Tue 2024-09-24 16:06:04 -03; 16h ago[m
+   Duration: 2min 25.135s[m
+       Docs: ]8;;man:NetworkManager(8)man:NetworkManager(8)]8;;[m
+    Process: 4910 ExecStart=/usr/sbin/NetworkManager --no-daemon [0;1;31m(code=exited, status=1/FAILURE)[0m[m
+   Main PID: 4910 (code=exited, status=1/FAILURE)[m
+        CPU: 32ms[m
+[K[?1l>[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ sudo systemctl restart [7msystemctl status NetworkManager.service[27msystemctl status NetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service[1PNetworkManager.service
+[?2004l[sudo] senha para on: 
+[0;1;31mJob for NetworkManager.service failed because the control process exited with error code.[0m
+[0;1;31mSee "systemctl status NetworkManager.service" and "journalctl -xeu NetworkManager.service" for details.[0m
+[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ [7mjournalctl -xeu NetworkManager.service[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjournalctl -xeu NetworkManager.service
+[?2004l[0;1;39mHint: You are currently not seeing messages from other users and the system.[0m
+[0;1;39m      Users in groups 'adm', 'systemd-journal' can see all messages.[0m
+[0;1;39m      Pass -q to turn off this notice.[0m
+[?1h=[K[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+-- No entries --[m
+[K[?1l>[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ -q
+[?2004lbash: -q: comando não encontrado
+[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ [7msudo /usr/bin/NetworkManager --no-daemon[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo /usr/bin/NetworkManager --no-daemon
+[?2004l[sudo] senha para on: 
+sudo: /usr/bin/NetworkManager: comando não encontrado
+[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ sudo /usr/bin/NetworkManager --no-daemon[1P[1P[1P[1P[1P[1P[1P[1P[1P
+[?2004lNetworkManager já está em execução (pid 4645)
+[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ systemctl[Csystemctlusystemctldsystemctlosystemctl systemctl[C[C[C[C[C[C[C[C[C status NetworkManager
+[?2004l[?1h=[0;1;31m×[0m NetworkManager.service - Network Manager[m
+     Loaded: loaded (]8;;file://rdo/lib/systemd/system/NetworkManager.service/lib/systemd/system/NetworkManager.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Wed 2024-09-25 08:32:04 -03; 27min ago[m
+   Duration: 2min 25.135s[m
+       Docs: ]8;;man:NetworkManager(8)man:NetworkManager(8)]8;;[m
+    Process: 5387 ExecStart=/usr/sbin/NetworkManager --no-daemon [0;1;31m(code=exited, status=1/FAILURE)[0m[m
+   Main PID: 5387 (code=exited, status=1/FAILURE)[m
+        CPU: 32ms[m
+[m
+set 25 08:32:04 rdo systemd[1]: NetworkManager.service: Scheduled restart job, restart counter is at 5.[m
+set 25 08:32:04 rdo systemd[1]: Stopped NetworkManager.service - Network Manager.[m
+set 25 08:32:04 rdo systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mNetworkManager.service: Start request repeated too quickly.[0m[m
+set 25 08:32:04 rdo systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mNetworkManager.service: Failed with result 'exit-code'.[0m[m
+set 25 08:32:04 rdo systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start NetworkManager.service - Network Manager.[0m[m
+[K[?1l>[?2004h(Le) ]0;on@rdo:restart job, restart counter is at 5.[m
+set 25 08:32:04 rdo systemd[1]: Stopped NetworkManager.service - Network Manager.[m
+set 25 08:32:04 rdo systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mNetworkManager.service: Start request repeated too quickly.[0m[m
+set 25 08:32:04 rdo systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mNetworkManager.service: Failed with result 'exit-code'.[0m[m
+set 25 08:32:04 rdo systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start NetworkManager.service - Network Manager.[0m[m
+[K[?1l>[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ sudo systemctl status NetworkManager[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5PNetworkManager --no-daemon
+[?2004lNetworkManager já está em execução (pid 4645)
+[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ sudo killall NetworkManager
+[?2004l[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ sudo killall NetworkManagerNetworkManager --no-daemon
+[?2004l
+
+^C[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ sudo NetworkManager --no-daemon[4Pkillall NetworkManagerNetworkManager --no-daemonsystemctl status NetworkManager
+[?2004l[?1h=[0;1;31m×[0m NetworkManager.service - Network Manager[m
+     Loaded: loaded (]8;;file://rdo/lib/systemd/system/NetworkManager.service/lib/systemd/system/NetworkManager.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Wed 2024-09-25 08:32:04 -03; 32min ago[m
+   Duration: 2min 25.135s[m
+       Docs: ]8;;man:NetworkManager(8)man:NetworkManager(8)]8;;[m
+    Process: 5387 ExecStart=/usr/sbin/NetworkManager --no-daemon [0;1;31m(code=exited, status=1/FAILURE)[0m[m
+   Main PID: 5387 (code=exited, status=1/FAILURE)[m
+        CPU: 32ms[m
+[m
+set 25 08:32:04 rdo systemd[1]: NetworkManager.service: Scheduled restart job, restart counter is at 5.[m
+set 25 08:32:04 rdo systemd[1]: Stopped NetworkManager.service - Network Manager.[m
+set 25 08:32:04 rdo systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mNetworkManager.service: Start request repeated too quickly.[0m[m
+set 25 08:32:04 rdo systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mNetworkManager.service: Failed with result 'exit-code'.[0m[m
+set 25 08:32:04 rdo systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start NetworkManager.service - Network Manager.[0m[m
+[K[?1l>[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ sudo systemctl status NetworkManager[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5PNetworkManager --no-daemon
+[?2004l^[[A    ^C[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ sudo NetworkManager --no-daemonsystemctl status NetworkManager[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5PNetworkManager --no-daemon[4Pkillall NetworkManagerNetworkManager --no-daemonsystemctl status NetworkManager[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5PNetworkManager --no-daemon[9@/usr/bin/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-q[Kjournalctl -xeu NetworkManager.service[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7@sudo systemctl restart[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ sudo systemctl restart NetworkManager.service[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14PNetworkManager --no-daemonsystemctl status NetworkManager
+[?2004l[?1h=[0;1;32m�e[m
+             └─[0;38;5;245m5577 /usr/sbin/NetworkManager --no-daemon[0m[m
+[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8389] device (lo): state change: disconnected -> prepare (reason 'none', sys-iface-[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8392] device (lo): state change: prepare -> config (reason 'none', sys-iface-state:[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8393] device (lo): state change: config -> ip-config (reason 'none', sys-iface-stat[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8394] device (lo): state change: ip-config -> ip-check (reason 'none', sys-iface-st[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8761] modem-manager: ModemManager available[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8934] agent-manager: agent[f15597b4c31950cb,:1.67/org.gnome.Shell.NetworkAgent/1000[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9104] device (lo): state change: ip-check -> secondaries (reason 'none', sys-iface-[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9111] device (lo): state change: secondaries -> activated (reason 'none', sys-iface[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9115] device (lo): Activation: successful, device activated.[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9119] manager: startup complete[m
+[7mlines 1-21/21 (END)[27m[K[H[2J[H[H[2J[H[0;1;32m●[0m NetworkManager.service - Network Manager[m
+     Loaded: loaded (]8;;file://rdo/lib/systemd/system/NetworkManager.service/lib/systemd/system/NetworkManager.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Wed 2024-09-25 09:05:46 -03; 34s ago[m
+       Docs: ]8;;man:NetworkManager(8)man:NetworkManager(8)]8;;[m
+   Main PID: 5577 (NetworkManager)[m
+      Tasks: 3 (limit: 4581)[m
+     Memory: 5.3M[m
+        CPU: 91ms[m
+     CGroup: /system.slice/NetworkManager.service[m
+             └─[0;38;5;245m5577 /usr/sbin/NetworkManager --no-daemon[0m[m
+[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8389] device (lo): state change: disconnected -> prepare (reason 'none', sys-iface-s[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8392] device (lo): state change: prepare -> config (reason 'none', sys-iface-state: [m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8393] device (lo): state change: config -> ip-config (reason 'none', sys-iface-state[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8394] device (lo): state change: ip-config -> ip-check (reason 'none', sys-iface-sta[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8761] modem-manager: ModemManager available[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8934] agent-manager: agent[f15597b4c31950cb,:1.67/org.gnome.Shell.NetworkAgent/1000][m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9104] device (lo): state change: ip-check -> secondaries (reason 'none', sys-iface-s[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9111] device (lo): state change: secondaries -> activated (reason 'none', sys-iface-[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9115] device (lo): Activation: successful, device activated.[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9119] manager: startup complete[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-21/21 (END)[27m[K[H[2J[H[H[2J[H[0;1;32m●[0m NetworkManager.service - Network Manager[m
+     Loaded: loaded (]8;;file://rdo/lib/systemd/system/NetworkManager.service/lib/systemd/system/NetworkManager.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0er[5577]: <info>  [1727265946.9115] device (lo): Activation: successful, device activated.[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9119] manager: startup complete[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-21/21 (END)[27m[K[H[2J[H[H[2J[H[0;1;32m●[0m NetworkManager.service - Network Manager[m
+     Loaded: loaded (]8;;file://rdo/lib/systemd/system/NetworkManager.service/lib/systemd/system/NetworkManager.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Wed 2024-09-25 09:05:46 -03; 34s ago[m
+       Docs: ]8;;man:NetworkManager(8)man:NetworkManager(8)]8;;[m
+   Main PID: 5577 (NetworkManager)[m
+      Tasks: 3 (limit: 4581)[m
+     Memory: 5.3M[m
+        CPU: 91ms[m
+     CGroup: /system.slice/NetworkManager.service[m
+             └─[0;38;5;245m5577 /usr/sbin/NetworkManager --no-daemon[0m[m
+[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8389] device (lo): state change: disconnected -> prepare (reason 'none', sys-iface-st[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8392] device (lo): state change: prepare -> config (reason 'none', sys-iface-state: '[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8393] device (lo): state change: config -> ip-config (reason 'none', sys-iface-state:[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8394] device (lo): state change: ip-config -> ip-check (reason 'none', sys-iface-stat[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8761] modem-manager: ModemManager available[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8934] agent-manager: agent[f15597b4c31950cb,:1.67/org.gnome.Shell.NetworkAgent/1000]:[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9104] device (lo): state change: ip-check -> secondaries (reason 'none', sys-iface-st[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9111] device (lo): state change: secondaries -> activated (reason 'none', sys-iface-s[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9115] device (lo): Activation: successful, device activated.[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.9119] manager: startup complete[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-21/21 (END)[27m[K[H[2J[H[H[2J[H[0;1;32m●[0m NetworkManager.service - Network Manager[m
+     Loaded: loaded (]8;;file://rdo/lib/systemd/system/NetworkManager.service/lib/systemd/system/NetworkManager.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Wed 2024-09-25 09:05:46 -03; 34s ago[m
+       Docs: ]8;;man:NetworkManager(8)man:NetworkManager(8)]8;;[m
+   Main PID: 5577 (NetworkManager)[m
+      Tasks: 3 (limit: 4581)[m
+     Memory: 5.3M[m
+        CPU: 91ms[m
+     CGroup: /system.slice/NetworkManager.service[m
+             └─[0;38;5;245m5577 /usr/sbin/NetworkManager --no-daemon[0m[m
+[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8389] device (lo): state change: disconnected -> prepare (reason 'none', sys-iface-sta[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8392] device (lo): state change: prepare -> config (reason 'none', sys-iface-state: 'e[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8393] device (lo): state change: config -> ip-config (reason 'none', sys-iface-state: [m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8394] device (lo): state change: ip-config -> ip-check (reason 'none', sys-iface-state[m[7m>[27m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8761] modem-manager: ModemManager available[m
+set 25 09:05:46 rdo NetworkManager[5577]: <info>  [1727265946.8934] agent-manager: agent[f15597b4c31950cb,:1.67/org.gnome.Shell.r: startup complete[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-21/21 (END)[27m[K[K[?1l>
+[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ ip a
+[?2004l1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: ens33: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:0c:29:46:46:87 brd ff:ff:ff:ff:ff:ff
+    altname enp2s1
+    inet6 fe80::20c:29ff:fe46:4687/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+[?2004h(Le) ]0;on@rdo: ~/Auto[01;32mon@rdo[00m:[01;34m~/Auto[00m$ [?2004l
+exit
+
+Script concluído em 2024-09-25 09:29:15-03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,69 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block switch %}
+
+<div class="row justify-content-md-center">
+    <div class="col-10">
+        <div class="input-group">
+            <form action="" method="GET">
+                <label for="Search">
+                    <input type="text" name="search" id="search" placeholder="Digite hostname" class="form-control">
+                </label>
+            </form>
+        </div>
+        <table class="table table-dark table-striped table-hover">
+            <tread>
+                <tr>
+                    <th scope="col">SWITCH</th>
+                    <th scope="col">IP</th>
+                    <th scope="col">USUARIO</th>
+                    <th scope="col">DATA</th>                    
+                    <th scope="col">EDITAR</th>
+                    <th scope="col">VLAN</th>                    
+                </tr>
+            </tread>
+
+            <tbody>
+                {% for pc in object_list %}
+                <tr>
+                    <td>{{ pc.hostname }}</td>
+                    <td>{{ pc.ip }}</td>
+                    <td>{{ pc.usuario }}</td>
+                    <td>{{ pc.data }}</td>                    
+                    <td><a class="btn btn_warning" href="{% url 'edita_pc' pc.pk %}">Editar</a></td>
+                    <td><a class="btn btn_danger" href="{% url 'edita_vlan' pc.pk %}">Editar</a></td>                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="row">
+             <div class="col-12 col-sm-auto">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        {% if pag_obj.has_previous %}
+                        <li class="page-item disabled">
+                            <a class="btn btn-secundary" href="?page={{ page_obj.previous_page_number }}" tabindex="-1"
+                               aria-disabled="true">Voltar</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="col-12 col-sm-auto">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        {% if pag_obj.has_next %}
+                        <li class="page-item disabled">
+                            <a class="btn btn-primary" href="?page={{ page_obj.next_page_number }}">Avançar</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+    </div>
+</div>
+
+{% endblock switch %}
